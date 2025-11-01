@@ -1,0 +1,165 @@
+/* Layout */
+
+/*Variáveis*/
+:root {
+    --Amarelo: #FEFC9C;
+    --Branco: #ffffff;
+    --Cinza: #31312f;
+    --Cinzaclaro: #4b4b489c;
+    --Amareloescuro: #d1ce00c2;
+    --preto: #000;
+}
+
+/*CSS Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lora", sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+/*--------------- fim Layout -------------*/
+
+
+/*--------------- Smartphone portrait -------------*/
+/*Cabeçalho */
+header {
+    height: 85px;
+    background-color: var(--Cinza);
+}
+
+#logo img {
+    width: 95px;
+    height: 95px;
+    margin-top: 39px;
+    margin-left: 35px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    color: rgba(254, 252, 156, 0.75);
+    font-size: 3.20rem;
+    position: fixed;
+    right: 20px;
+    top: 7px;
+}
+
+nav ul {
+    height: 100vh;
+    background-color: rgba(254, 252, 156, 0.58);
+    position: fixed;
+    top: 85px;
+    right: -35%;
+    width: 35%;
+    transition: all 0.5s;
+}
+
+/* Ação para a caixa checkbox */
+/* quando selecionado mudar propriedades ul */
+
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 12px;
+    text-align: right;
+    border: 1px solid var(--Cinzaclaro);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+
+
+/*--------------- fim - Smartphone portrait -------------*/
+
+
+/*--------------- Smartphone landscape -------------*/
+@media (min-width: 576px) {
+
+    /*Layout*/
+    .container {
+        max-width: 540px;
+    }
+
+    /* Cabeçalho */
+
+    nav ul {
+        width: 30%;
+        right: -30%;
+    }
+
+}
+
+/*--------------- fim - Smartphone landscape -------------*/
+
+/*--------------- tablet portrait -------------*/
+@media (min-width: 768px) {
+
+    /*Layout*/
+    .container {
+        max-width: 720px;
+    }
+
+    /* Cabeçalho */
+
+    nav ul {
+        width: 30%;
+        right: -30%;
+    }
+
+}
+
+/*--------------- fim - tablet portrait -------------*/
+
+
+/*--------------- tablet landscape -------------*/
+@media (min-width: 992px) {
+
+    /*Layout*/
+    .container {
+        max-width: 960px;
+    }
+}
+
+/*--------------- fim - tablet landscape -------------*/
+
+
+/*--------------- Notebook/PC -------------*/
+@media (min-width: 1200px) {
+
+    /*Layout*/
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/*--------------- fim - Notebook/PC -------------*/
+
+
+/*--------------- Full hd / 4k -------------*/
+@media (min-width: 1400px) {
+
+    /*Layout*/
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/*--------------- fim - Full hd / 4k -------------*/
