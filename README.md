@@ -6,3 +6,5 @@ Site One page da Bio Sporte para divulgação da Academia e encaminhamento de us
 ## Autor
 Mauricio Afonso Sena Silva
 
+## Acesso ao Site BioSport
+![](./img/qrcode.png)
