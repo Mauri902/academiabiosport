@@ -102,7 +102,7 @@ nav ul li a {
 main {
     height: 45vh;
     background: url(./img/Academia.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -268,7 +268,7 @@ main {
     /* Principal */
     
     main {
-        height: 90vh;
+        height: 87.3vh;
     }
     
     main h1 {
