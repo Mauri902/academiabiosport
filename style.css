@@ -6,7 +6,7 @@
     --Branco: #ffffff;
     --Cinza: #31312f;
     --Cinzaclaro: #4b4b489c;
-    --Amareloescuro: #d1ce00c2;
+    --Amareloescuro: #d1ce00de;
     --preto: #000;
 }
 
@@ -27,6 +27,17 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: var(--Amarelo);
+    padding: 2px 12px;
+    color: var(--Cinza);
+    border-radius: 30px;
+    border: 2px solid var(--Cinzaclaro);
+}
+
 /*--------------- fim Layout -------------*/
 
 
@@ -42,6 +53,7 @@ header {
     height: 95px;
     margin-top: 39px;
     margin-left: 35px;
+    border-radius: 30px;
 }
 
 #check {
@@ -85,7 +97,33 @@ nav ul li a {
     color: var(--preto);
 }
 
+/* Principal */
 
+main {
+    height: 45vh;
+    background: url(./img/Academia.png);
+    background-size: contain;
+    background-position: center;
+}
+
+main .container{
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: var(--Branco);
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.288),0px 15px 15px rgba(0, 0, 0, 0.288),0px 20px 20px rgba(0, 0, 0, 0.288);
+}
+
+main h2 {
+    color: var(--Amareloescuro);
+    font-size: 1.60rem;
+    text-shadow: 0px 2px 8px var(--preto),0px 10px 10px rgba(255, 255, 255, 0.521),0px 5px 5px rgba(255, 255, 255, 0.521),0px 5px 5px rgba(255, 255, 255, 0.521);
+    margin-bottom: 25px;
+}
 
 /*--------------- fim - Smartphone portrait -------------*/
 
@@ -105,6 +143,20 @@ nav ul li a {
         right: -30%;
     }
 
+/* Principal */
+
+    main {
+        height: 68vh;
+    }
+
+    main h1 {
+        font-size: 2.02rem;
+    }
+
+    main h2 {
+        font-size: 1.70rem;
+    }
+
 }
 
 /*--------------- fim - Smartphone landscape -------------*/
@@ -122,6 +174,14 @@ nav ul li a {
     nav ul {
         width: 30%;
         right: -30%;
+    }
+
+    main h1 {
+        font-size: 2.53rem;
+    }
+
+    main h2 {
+        font-size: 2.28rem;
     }
 
 }
@@ -185,6 +245,12 @@ nav ul li a {
     nav ul li a:hover {
         color: var(--Amareloescuro);
     }
+/* Principal */
+
+main {
+    height: 85vh;
+}
+
 
 }
 
@@ -197,6 +263,20 @@ nav ul li a {
     /*Layout*/
     .container {
         max-width: 1320px;
+    }
+
+    /* Principal */
+    
+    main {
+        height: 90vh;
+    }
+    
+    main h1 {
+        font-size: 3.68rem;
+    } 
+
+    main h2 {
+        font-size: 3rem;
     }
 }
 
