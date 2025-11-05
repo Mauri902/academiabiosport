@@ -212,12 +212,12 @@ main h2 {
 
     /* Cabeçalho */
     header {
-        height: 120px;
+        height: 97px;
     }
 
     #logo img {
-        width: 152px;
-        height: 152px;
+        width: 140px;
+        height: 140px;
     }
 
     label {
@@ -229,7 +229,7 @@ main h2 {
         width: 100%;
         height: auto;
         background-color: transparent;
-        margin-top: 35px;
+        margin-top: 22px;
     }
 
     nav ul li {
