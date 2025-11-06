@@ -106,7 +106,7 @@ main {
     background-position: center;
 }
 
-main .container{
+main .container {
     height: 100%;
     flex-direction: column;
     align-items: center;
@@ -115,15 +115,62 @@ main .container{
 
 main h1 {
     color: var(--Branco);
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.288),0px 15px 15px rgba(0, 0, 0, 0.288),0px 20px 20px rgba(0, 0, 0, 0.288);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.288), 0px 15px 15px rgba(0, 0, 0, 0.288), 0px 20px 20px rgba(0, 0, 0, 0.288);
+    text-align: center;
 }
 
 main h2 {
     color: var(--Amareloescuro);
     font-size: 1.60rem;
-    text-shadow: 0px 2px 8px var(--preto),0px 10px 10px rgba(255, 255, 255, 0.521),0px 5px 5px rgba(255, 255, 255, 0.521),0px 5px 5px rgba(255, 255, 255, 0.521);
+    text-shadow: 0px 2px 8px var(--preto), 0px 10px 10px rgba(255, 255, 255, 0.521), 0px 5px 5px rgba(255, 255, 255, 0.521), 0px 5px 5px rgba(255, 255, 255, 0.521);
     margin-bottom: 25px;
 }
+
+
+/* Destaque */
+#destaque {
+    padding: 20px 10px;
+    background: url(./img/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#destaque .container {
+    flex-direction: column;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+#hero-text h2 {
+    margin-bottom: 15px;
+    color: var(--Amarelo);
+}
+
+#hero-text p {
+    color: var(--Branco);
+}
+
+.topics {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.topics p {
+    margin-left: 15px;
+    color: var(--Branco);
+}
+
 
 /*--------------- fim - Smartphone portrait -------------*/
 
@@ -143,7 +190,7 @@ main h2 {
         right: -30%;
     }
 
-/* Principal */
+    /* Principal */
 
     main {
         height: 68vh;
@@ -151,10 +198,36 @@ main h2 {
 
     main h1 {
         font-size: 2.02rem;
+        text-align: center;
     }
 
     main h2 {
         font-size: 1.70rem;
+    }
+
+    /* Destaque */
+
+    #destaque {
+        padding: 20px 0px;
+    }
+
+    #destaque .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: left;
+    }
+
+    #hero img {
+        width: 150px;
+        height: 150px;
+        margin: 0px 30px 0px 0px;
+    }
+
+    .topics {
+        display: none;
     }
 
 }
@@ -178,6 +251,7 @@ main h2 {
 
     main h1 {
         font-size: 2.53rem;
+        text-align: center;
     }
 
     main h2 {
@@ -245,11 +319,31 @@ main h2 {
     nav ul li a:hover {
         color: var(--Amareloescuro);
     }
-/* Principal */
 
-main {
-    height: 85vh;
+    /* Principal */
+
+    main {
+        height: 85vh;
+    }
+
+    /* Destaque */
+
+    #hero img { 
+        width: 250px;
+        height: 250px;
+
+    }
+    
+.topics {
+    display: flex;
+    flex-direction: column;
 }
+
+    #destaque {
+        padding: 120px 0px;
+        background-attachment: fixed;
+    }
+
 
 
 }
@@ -265,15 +359,20 @@ main {
         max-width: 1320px;
     }
 
+    /* Cabeçalho */
+    header {
+        height: 100px;
+    }
+
     /* Principal */
-    
+
     main {
         height: 87.3vh;
     }
-    
+
     main h1 {
         font-size: 3.68rem;
-    } 
+    }
 
     main h2 {
         font-size: 3rem;
