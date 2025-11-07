@@ -130,7 +130,7 @@ main h2 {
 /* Destaque */
 #destaque {
     padding: 20px 10px;
-    background: url(./img/background.png);
+    background: url(./img/background.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -171,6 +171,19 @@ main h2 {
     color: var(--Branco);
 }
 
+#sobre {
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    margin-bottom: 20px;
+}
 
 /*--------------- fim - Smartphone portrait -------------*/
 
@@ -328,16 +341,20 @@ main h2 {
 
     /* Destaque */
 
-    #hero img { 
+    #hero img {
         width: 250px;
         height: 250px;
 
     }
-    
-.topics {
-    display: flex;
-    flex-direction: column;
-}
+
+    .topics {
+        display: flex;
+        flex-direction: left;
+    }
+
+    .topics p {
+        margin-left: 20px;
+    }
 
     #destaque {
         padding: 120px 0px;
