@@ -27,6 +27,11 @@ body {
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
 .btn {
     text-decoration: none;
     font-size: 1.25rem;
@@ -173,17 +178,31 @@ main h2 {
 
 #sobre {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 20px 10px;
 }
 
 #sobre h2 {
     margin-bottom: 20px;
+    text-align: left;
+    margin-left: 25px;
+    font-size: 1.90;
 }
 
 #sobre p {
     margin-bottom: 20px;
+    text-align: left;
+    margin-left: 13px;
+
 }
+
+#sobre img {
+    text-align: center;
+    margin-left: 13px;
+    margin-right: 25px;
+}
+
 
 /*--------------- fim - Smartphone portrait -------------*/
 
@@ -361,7 +380,15 @@ main h2 {
         background-attachment: fixed;
     }
 
+    #sobre img {
+        width: 320px;
+        height: 320px;
+    }
 
+    .flex {
+        flex-direction: row;
+        align-items: center;
+    }
 
 }
 
