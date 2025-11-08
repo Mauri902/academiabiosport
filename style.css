@@ -183,6 +183,10 @@ main h2 {
     margin: 20px 10px;
 }
 
+#sobre .container {
+    flex-direction: column;
+}
+
 #sobre h2 {
     margin-bottom: 20px;
     text-align: left;
@@ -192,16 +196,49 @@ main h2 {
 
 #sobre p {
     margin-bottom: 20px;
-    text-align: left;
-    margin-left: 13px;
-
-}
-
-#sobre img {
     text-align: center;
-    margin-left: 13px;
-    margin-right: 25px;
 }
+
+#sobre .imagem {
+    margin-right: 25px;
+    text-align: center;
+}
+
+#conhecimento {
+    padding: 35px 10px;
+    background: url(./img/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#conhecimento .container {    
+    display: flex;
+    flex-direction: column;
+}
+
+#conhecimento .container h2 {
+    color: var(--Amarelo);
+    margin-left: 25px;
+}
+
+#conhecimento .container p {
+    color: var(--Branco);
+    margin: 20px 0px;
+}
+
+#conhecimento #qrcode {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#conhecimento .container a {
+    background-color: var(--Amareloescuro);
+    color: #000000;
+    text-align: center;
+    border-radius: 70px;
+}
+
+
 
 
 /*--------------- fim - Smartphone portrait -------------*/
@@ -261,6 +298,16 @@ main h2 {
     .topics {
         display: none;
     }
+
+    #sobre {
+        display: flex;
+    }
+
+    #sobre .container {
+        flex-direction: column;
+    }
+
+   
 
 }
 
@@ -380,15 +427,23 @@ main h2 {
         background-attachment: fixed;
     }
 
-    #sobre img {
+    #sobre .imagem {
+        margin-left: 15px;
         width: 320px;
         height: 320px;
     }
 
-    .flex {
+    #sobre {
+        display: flex;
         flex-direction: row;
-        align-items: center;
     }
+
+    #sobre .container {
+        flex-direction: row;
+    }
+
+
+    
 
 }
 
