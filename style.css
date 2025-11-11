@@ -32,6 +32,11 @@ body {
     flex-direction: column;
 }
 
+.flex2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .btn {
     text-decoration: none;
     font-size: 1.25rem;
@@ -189,19 +194,18 @@ main h2 {
 
 #sobre h2 {
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
     margin-left: 25px;
     font-size: 1.90rem;
 }
 
 #sobre p {
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 #sobre .imagem {
-    margin-right: 25px;
-    text-align: center;
+    align-items: center;
 }
 
 #conhecimento {
@@ -211,14 +215,15 @@ main h2 {
     background-size: cover;
 }
 
-#conhecimento .container {    
+#conhecimento .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #conhecimento .container h2 {
     color: var(--Amarelo);
-    margin-left: 25px;
+    margin: 25px 50px;
 }
 
 #conhecimento .container p {
@@ -226,9 +231,9 @@ main h2 {
     margin: 20px 0px;
 }
 
-#conhecimento #qrcode {
+#qrcode {
     text-align: center;
-    margin-top: 20px;
+    margin: 10px 25px;
 }
 
 #conhecimento .container a {
@@ -236,6 +241,7 @@ main h2 {
     color: #000000;
     text-align: center;
     border-radius: 70px;
+    margin: center 30px;
 }
 
 
@@ -307,7 +313,7 @@ main h2 {
         flex-direction: column;
     }
 
-   
+
 
 }
 
@@ -428,6 +434,7 @@ main h2 {
     }
 
     #sobre .imagem {
+        align-items: flex-start;
         margin-left: 15px;
         width: 320px;
         height: 320px;
@@ -443,8 +450,23 @@ main h2 {
     }
 
 
-    
+    #conhecimento {
+        background-attachment: fixed;
+    }
 
+    #conhecimento h2 {
+        text-align: center;
+        font-size: 1.35rem;
+    }
+
+    #conhecimento p {
+        font-size: 1.02rem;
+    }
+
+    #conhecimento .container {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 /*--------------- fim - Notebook/PC -------------*/
