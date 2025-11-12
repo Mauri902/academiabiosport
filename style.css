@@ -48,6 +48,22 @@ body {
     border: 2px solid var(--Cinzaclaro);
 }
 
+
+
+/* topo do site */
+
+#topo {
+    position: fixed;
+    right: 12px;
+    bottom: 7px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 /*--------------- fim Layout -------------*/
 
 
@@ -232,8 +248,7 @@ main h2 {
 }
 
 #qrcode {
-    text-align: center;
-    margin: 10px 25px;
+    display: none;
 }
 
 #conhecimento .container a {
@@ -244,7 +259,35 @@ main h2 {
     margin: center 30px;
 }
 
+/* Cartões */
 
+#cartao {
+    padding: 30px 10px;
+}
+
+#cartao .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#cartao h2 {
+    margin: 12px 25px;
+    font-weight: 800;
+}
+
+#cartao p {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card {
+    margin-bottom: 25px;
+    border-style: inset;
+}
+
+.card img {
+    border-radius: 30px;
+}
 
 
 /*--------------- fim - Smartphone portrait -------------*/
@@ -449,6 +492,14 @@ main h2 {
         flex-direction: row;
     }
 
+    #qrcode {
+        display: flex;
+        height: 190px;
+    }
+
+    #qrcode img {
+        border-radius: 20px;
+    }
 
     #conhecimento {
         background-attachment: fixed;
