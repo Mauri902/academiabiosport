@@ -66,19 +66,19 @@
                 <div class="topics">
                     <img src="./img/jump.png" alt="Jump">
                     <p>
-                        Venha fazer Jump conosco.
+                        Na vida, assim como no treino, às vezes você só precisa dar um grande jump de fé.
                     </p>
                 </div>
                 <div class="topics">
                     <img src="img/jiujitsu.jpg" alt="jiujitsu">
                     <p>
-                        Conheça nossa aula de Jiu jitsu.
+                        Jiu-Jitsu não é sobre vencer ou perder, mas sobre evoluir a cada queda.
                     </p>
                 </div>
                 <div class="topics">
-                    <img src="img/muaytai.jpg" alt="muaythai">
+                    <img src="img/musculacao.png" alt="muaythai">
                     <P>
-                        Venha praticar Muay thai em nossas aulas.
+                        A musculação não é apenas algumas horas de treino, mas um estilo de vida.
                     </P>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                     funcionamento todos os dias, para que você tenha liberdade de treinar no seu ritmo.</p>
             </div>
             <div class="imagem">
-                <img src="./img/IMG_3.jpg" alt="img">
+                <img src="./img/IMG_4.jpg" alt="img">
             </div>
         </div>
     </section>
@@ -140,20 +140,26 @@
             <div class="card">
                 <img src="./img/IMG_1.jpg" alt="card1">
                 <h2>Jump</h2>
-                <p>É um exercício aeróbico dinâmico e divertido que utiliza mini trampolins (saltos elásticos) para realizar uma série de movimentos coreografados.</p>
-                <a href="./doc/panfleto Bio Sport .pdf" target="_blank" rel="noopener noreferrer" class="btn">CATÁLOGO</a>
+                <p>É um exercício aeróbico dinâmico e divertido que utiliza mini trampolins para realizar uma série de
+                    movimentos coreografados.</p>
+                <a href="./doc/panfleto Bio Sport .pdf" target="_blank" rel="noopener noreferrer"
+                    class="btn">CATÁLOGO</a>
             </div>
             <div class="card">
                 <img src="./img/IMG_2.jpg" alt="card1">
                 <h2>Jiu Jitsu</h2>
-                <p>Geralmente se divide em aquecimento/alongamento, instrução técnica e prática supervisionada (rolagem).</p>
-                <a href="./doc/panfleto Bio Sport .pdf" target="_blank!" rel="noopener noreferrer" class="btn">CATÁLOGO</a>
+                <p>Geralmente se divide em aquecimento/alongamento, instrução técnica e prática supervisionada
+                    (rolagem).</p>
+                <a href="./doc/panfleto Bio Sport .pdf" target="_blank!" rel="noopener noreferrer"
+                    class="btn">CATÁLOGO</a>
             </div>
             <div class="card">
                 <img src="./img/IMG_3.jpg" alt="card1">
                 <h2>Muay Thai</h2>
-                <p>Geralmente começa com alongamentos, corrida e polichinelos para preparar o corpo e aumentar a frequência cardíaca.</p>
-                <a href="./doc/panfleto Bio Sport .pdf" target="_blank" rel="noopener noreferrer" class="btn">CATÁLOGO</a>
+                <p>é um tipo de exercício de força que usa pesos, máquinas e o peso do próprio corpo para desenvolver e
+                    fortalecer os músculos.</p>
+                <a href="./doc/panfleto Bio Sport .pdf" target="_blank" rel="noopener noreferrer"
+                    class="btn">CATÁLOGO</a>
             </div>
         </div>
     </section>
@@ -162,21 +168,44 @@
 
     <address id="contato">
         <div class="container">
-
+            <div class="contato-item">
+                <a href="https://www.google.com/maps/place/Bio+Sport+training+center/@-23.5737687,-46.5339496,17z/data=!3m2!4b1!5s0x94ce5d941a9b53fb:0x6dceb027556c11f1!4m6!3m5!1s0x94ce5d941a249387:0xb2a203e63fb494cb!8m2!3d-23.5737736!4d-46.5313747!16s%2Fg%2F11bw3dq8fp?entry=ttu&g_ep=EgoyMDI1MTExMC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank">
+                    <img src="./img/mapa.png" alt="mapa">Endereço</a>
+            </div>
         </div>
     </address>
     <!-- Rodapé -->
-     <footer>
+    <footer>
         <div class="container">
-
+            <div>
+                <p>&#169;<span id="copyrightYear"></span> Academia BioSport | <a href="https://github.com/Mauri902"
+                        target="_blank" rel="noopener noreferrer"><strong></strong>Mauricio Sena</a></p>
+            </div>
+            <div id="social">
+                <a href="mailto:biosportct@gmail.com?subjet=Contato Instagram"><img src="./img/e-mail.png"
+                        alt="e-mail"></a>
+                <a href="https://www.instagram.com/biosportct/" target="_blank"><img src="img/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://www.facebook.com/biosportacademia" target="_blank"><img src="img/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.youtube.com/@professorramos" target="_blank"><img src="img/e-mail.png"
+                        alt="E-mail"></a>
+            </div>
         </div>
-     </footer>
+    </footer>
 
-     <!-- topo do site -->
-     <div id="topo">
+    <!-- topo do site -->
+    <div id="topo">
         <a href="#inicio"><img src="./img/toplight.png" alt="icon top"></a>
-     </div>
-    
+    </div>
+    </div>
+    <!-- Ano automático -->
+    <script>
+        let ano = document.getElementById("copyrightYear")
+        let anoAtual = new Date().getFullYear()
+        ano.textContent = anoAtual
+    </script>
 
 </body>
 

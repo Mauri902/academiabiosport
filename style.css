@@ -263,11 +263,13 @@ main h2 {
 
 #cartao {
     padding: 30px 10px;
+    text-align: center;
 }
 
 #cartao .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #cartao h2 {
@@ -281,24 +283,25 @@ main h2 {
     margin-bottom: 20px;
     font-weight: 500;
     color: var(--Branco);
+    text-align: center;
 }
 
 .card {
     background-color: var(--Cinza);
     background-position: center;
     margin-bottom: 25px;
-    border-style:double;
+    border-style: double;
     border-radius: 30px;
-    align-items: center;
+    text-align: center;
     border-color: var(--Amareloescuro);
     height: 480px;
-    
+    width: 358px;
 }
 
 .card img {
     border-radius: 30px;
     align-items: center;
-    height: 274px;
+    height: 272.5px;
 }
 
 
@@ -368,7 +371,9 @@ main h2 {
         flex-direction: column;
     }
 
-
+    .imagem {
+        text-align: center;
+    }
 
 }
 
@@ -410,6 +415,8 @@ main h2 {
     .container {
         max-width: 960px;
     }
+
+
 }
 
 /*--------------- fim - tablet landscape -------------*/
@@ -530,6 +537,16 @@ main h2 {
         display: flex;
         flex-direction: row;
     }
+
+    #cartao {
+        align-items: center;
+    }
+
+    #cartao .container {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 /*--------------- fim - Notebook/PC -------------*/
