@@ -304,6 +304,35 @@ main h2 {
     height: 272.5px;
 }
 
+#contato {
+    background-color: var(--Cinza);
+    display: flex;
+    flex-direction: row;
+}
+
+#social .topics {
+    margin-bottom: 15px;
+}
+
+.contato-item iframe {
+    display: none;
+}
+
+#dados {
+    margin: 20px 0px 10px 0px;
+}
+
+#mapa {
+    color: var(--Branco);
+}
+
+.containerfooter {
+    padding: 5px;
+    background-color: var(--preto);
+    color: var(--Branco);
+    text-align: center;
+}
+
 
 /*--------------- fim - Smartphone portrait -------------*/
 
@@ -375,6 +404,20 @@ main h2 {
         text-align: center;
     }
 
+    #social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #social .container {
+        align-items: center;
+    }
+
+    #social .topics {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 /*--------------- fim - Smartphone landscape -------------*/
@@ -401,6 +444,14 @@ main h2 {
 
     main h2 {
         font-size: 2.28rem;
+    }
+
+    #mapa iframe {
+        display: flex;
+
+        width: 400px;
+        height: 350px;
+        margin-bottom: 20px;
     }
 
 }
